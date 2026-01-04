@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HOPn – Innovation & Technology</title>
+
+    <meta
+      name="description"
+      content="HOPn is an innovation and technology hub helping organizations build AI, Digital Twins, and research-driven solutions with real-world impact."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ================= HEADER / NAVBAR ================= -->
+    <header class="header">
+      <div class="container nav">
+        <div class="logo">HOPn</div>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#services">Services</a>
+          <a href="#approach">Approach</a>
+          <a href="#trust">Trust</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="btn btn-primary">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= HERO (SPLIT) ================= -->
+    <section class="hero" id="home">
+      <div class="container hero-split">
+        <!-- Left -->
+        <div class="hero-left">
+          <div class="kicker">
+            <span class="k-dot"></span>
+            Innovation • Research • Technology
+          </div>
+
+          <h1>
+            Build innovation that creates
+            <span class="grad">measurable impact</span>
+          </h1>
+
+          <p class="hero-lead">
+            HOPn helps organizations design, prototype, and scale future-ready
+            solutions across AI, data, digital twins, and innovation ecosystems.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Work with us</a>
+            <a href="#services" class="btn btn-secondary">Explore services</a>
+          </div>
+
+          <div class="metrics-strip">
+            <div class="metric">
+              <span class="metric-num">200+</span>
+              <span class="metric-label">partners</span>
+            </div>
+            <div class="metric">
+              <span class="metric-num">150+</span>
+              <span class="metric-label">projects</span>
+            </div>
+            <div class="metric">
+              <span class="metric-num">3,000+</span>
+              <span class="metric-label">R&amp;D hours</span>
+            </div>
+            <div class="metric">
+              <span class="metric-num">5+</span>
+              <span class="metric-label">focus areas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="hero-right" aria-label="Highlights">
+          <div class="hero-panel">
+            <div class="panel-head">
+              <div class="panel-title">What we deliver</div>
+              <div class="panel-sub">
+                A practical path from insight → prototype → scale
+              </div>
+            </div>
+
+            <div class="panel-grid">
+              <div class="mini-card">
+                <div class="icon">
+                  <!-- Spark -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 2l1.2 6.4L19.5 10l-6.3 1.6L12 18l-1.2-6.4L4.5 10l6.3-1.6L12 2z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="mini-title">Discovery</div>
+                  <div class="mini-text">
+                    Clarify goals, scope, constraints, and outcomes.
+                  </div>
+                </div>
+              </div>
+
+              <div class="mini-card">
+                <div class="icon">
+                  <!-- Nodes -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M7 7a3 3 0 116 0 3 3 0 01-6 0zm8 10a3 3 0 116 0 3 3 0 01-6 0zM4 20a3 3 0 116 0 3 3 0 01-6 0zm5.2-10.1l6.6 5.4M8.6 18.6l2.5-7.1"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="mini-title">Build &amp; validate</div>
+                  <div class="mini-text">
+                    Prototype fast, test in real contexts, iterate.
+                  </div>
+                </div>
+              </div>
+
+              <div class="mini-card">
+                <div class="icon">
+                  <!-- Shield -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 2l8 4v6c0 5-3.5 9.4-8 10-4.5-.6-8-5-8-10V6l8-4z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9 12l2 2 4-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="mini-title">Trust &amp; rigor</div>
+                  <div class="mini-text">
+                    Research-driven methods, clear delivery, measurable value.
+                  </div>
+                </div>
+              </div>
+
+              <div class="mini-card">
+                <div class="icon">
+                  <!-- People -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M16 11a3 3 0 100-6 3 3 0 000 6zM8 11a3 3 0 100-6 3 3 0 000 6z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M2 20c.7-3 3-5 6-5s5.3 2 6 5M12 20c.5-2.2 2.2-4 4.5-4 2.7 0 4.7 1.7 5.5 4"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="mini-title">Enable teams</div>
+                  <div class="mini-text">
+                    Training, workshops, programs, and innovation events.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel-foot">
+              <a class="panel-link" href="#approach">See our approach →</a>
+              <span class="panel-hint"
+                >Built for industry + academia + startups</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PARTNERS / LOGOS SLIDER ================= -->
+    <section class="partners" id="partners">
+      <div class="container">
+        <div class="partners-head">
+          <p class="partners-kicker">Trusted by teams across industries</p>
+</div>
+
+        <div class="logo-marquee" aria-label="Partner sectors">
+          <div class="logo-track">
+            <div class="logo-chip">Industry &amp; Manufacturing</div>
+            <div class="logo-chip">Smart Cities</div>
+            <div class="logo-chip">Public Sector</div>
+            <div class="logo-chip">Research Institutions</div>
+            <div class="logo-chip">Universities</div>
+            <div class="logo-chip">Innovation Labs</div>
+            <div class="logo-chip">Technology Startups</div>
+            <div class="logo-chip">Innovation Ecosystems</div>
+
+            <div class="logo-chip">Industry &amp; Manufacturing</div>
+            <div class="logo-chip">Smart Cities</div>
+            <div class="logo-chip">Public Sector</div>
+            <div class="logo-chip">Research Institutions</div>
+            <div class="logo-chip">Universities</div>
+            <div class="logo-chip">Innovation Labs</div>
+            <div class="logo-chip">Technology Startups</div>
+            <div class="logo-chip">Innovation Ecosystems</div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHAT WE DO ================= -->
+    <section class="what" id="what">
+      <div class="container">
+        <h2 class="section-title">What HOPn does</h2>
+        <p class="section-subtitle">
+          We bridge industry needs with academic research and startup agility to
+          deliver solutions that can be built, tested, and scaled.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="card-top">
+              <span class="card-ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2l2.2 6.8H21l-5.6 4 2.1 6.9L12 16l-5.5 3.7 2.1-6.9L3 8.8h6.8L12 2z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <h3>Define the problem</h3>
+            </div>
+            <p>
+              We clarify goals, constraints, and outcomes with research-driven
+              discovery.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-top">
+              <span class="card-ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 7h16M7 4v16M17 4v16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <h3>Build solutions</h3>
+            </div>
+            <p>
+              We develop AI, data, and digital twin capabilities with practical
+              delivery.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-top">
+              <span class="card-ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 3v18M3 12h18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <h3>Enable teams</h3>
+            </div>
+            <p>
+              We strengthen capability through training, workshops, and events.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= APPROACH SECTION ================= -->
+    <section class="approach" id="approach">
+      <div class="container">
+        <h2 class="section-title">How We Work</h2>
+        <p class="section-subtitle">
+          A structured approach that turns ideas into impactful digital
+          solutions.
+        </p>
+
+        <div class="approach-steps">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <h3>Discover</h3>
+            <p>
+              We deeply understand challenges, goals, and real-world constraints
+              before taking action.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <h3>Research &amp; Design</h3>
+            <p>
+              We combine academic research, data insights, and design thinking
+              to shape smart solutions.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <h3>Build &amp; Validate</h3>
+            <p>
+              We develop scalable solutions and validate them through real use
+              cases and iteration.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">04</span>
+            <h3>Scale &amp; Impact</h3>
+            <p>
+              We deliver measurable impact and help organizations scale
+              innovation sustainably.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRUST ================= -->
+    <section class="trust" id="trust">
+      <div class="container">
+        <h2 class="section-title">Why Organizations Trust HOPn</h2>
+
+        <div class="trust-grid">
+          <div class="trust-card">
+            <h3>Industries We Work With</h3>
+            <ul>
+              <li>Industry &amp; Manufacturing</li>
+              <li>Smart Cities &amp; Infrastructure</li>
+              <li>Research Institutions &amp; Universities</li>
+              <li>Startups &amp; Innovation Labs</li>
+              <li>Government &amp; Public Sector</li>
+            </ul>
+          </div>
+
+          <div class="trust-card">
+            <h3>Our Methodology</h3>
+            <ul>
+              <li>Research-driven problem understanding</li>
+              <li>Data-first and AI-powered solutions</li>
+              <li>Agile delivery &amp; rapid prototyping</li>
+              <li>Collaborative, partner-oriented approach</li>
+            </ul>
+          </div>
+
+          <div class="trust-card">
+            <h3>Impact &amp; Value</h3>
+            <ul>
+              <li>Scalable and future-ready digital solutions</li>
+              <li>Data-driven decision making</li>
+              <li>Accelerated innovation cycles</li>
+              <li>Bridging academia, industry, and startups</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">
+          Core areas where we help organizations explore, build, and scale
+          innovation.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="card-top">
+              <span class="card-ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M8 7h8M8 11h8M8 15h5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M6 4h12v16H6z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+              <h3>AI &amp; Data Solutions</h3>
+            </div>
+            <p>
+              Intelligent data-driven solutions that enable smarter decisions
+              and scalable innovation.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="card-top">
+              <span class="card-ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 3l8 4v10l-8 4-8-4V7l8-4z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M12 7v14M4 7l8 4 8-4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+              <h3>Digital Twins</h3>
+            </div>
+            <p>
+              Advanced digital modeling to simulate, analyze, and optimize
+              complex systems.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="card-top">
+              <span class="card-ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 19h16M6 16V5h12v11"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M9 9h6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <h3>Research &amp; Innovation</h3>
+            </div>
+            <p>
+              Applied research bridging academia, startups, and
+              industry—validated through prototypes.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="card-top">
+              <span class="card-ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4 7h16v10H4z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M8 11h8"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <h3>Training &amp; Education</h3>
+            </div>
+            <p>
+              Professional training programs focused on future technologies,
+              tools, and innovation skills.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="card-top">
+              <span class="card-ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 6a3 3 0 100 6 3 3 0 000-6z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M4 20c1-4 4-6 8-6s7 2 8 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+              <h3>Platforms, Events &amp; Ecosystems</h3>
+            </div>
+            <p>
+              We build communities through platforms, workshops, hackathons, and
+              innovation programs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CASE STUDIES ================= -->
+    <section class="cases" id="cases">
+      <div class="container">
+        <h2 class="section-title">Case Studies</h2>
+        <p class="section-subtitle">
+          Delivering measurable impact across industries and domains.
+        </p>
+
+        <div class="cases-grid">
+          <article class="case-card">
+            <div class="case-tag">AI</div>
+            <h3>Predictive maintenance for manufacturing</h3>
+            <p>
+              Reduced downtime by modeling failure signals and alert thresholds.
+            </p>
+            <a class="case-link" href="#contact">Learn more →</a>
+          </article>
+
+          <article class="case-card">
+            <div class="case-tag">Digital Twin</div>
+            <h3>Urban mobility simulation</h3>
+            <p>
+              Optimized traffic flows with scenario testing and visualization.
+            </p>
+            <a class="case-link" href="#contact">Learn more →</a>
+          </article>
+
+          <article class="case-card">
+            <div class="case-tag">Research</div>
+            <h3>Applied R&amp;D for innovation labs</h3>
+            <p>
+              From literature review to prototype validation in short cycles.
+            </p>
+            <a class="case-link" href="#contact">Learn more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">What partners say</h2>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p class="quote">
+              “HOPn helped us move from scattered ideas to a validated prototype
+              in weeks.”
+            </p>
+            <div class="who">
+              <span class="name">Operations Lead</span>
+              <span class="meta">Industry &amp; Manufacturing</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="quote">
+              “Strong research mindset, clean delivery, and a very collaborative
+              approach.”
+            </p>
+            <div class="who">
+              <span class="name">Innovation Manager</span>
+              <span class="meta">Public Sector</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="quote">
+              “They bridged academia and product needs smoothly — exactly what
+              we needed.”
+            </p>
+            <div class="who">
+              <span class="name">Lab Director</span>
+              <span class="meta">University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About HOPn</h2>
+        <p class="section-subtitle">
+          HOPn is an innovation and technology hub combining industry expertise,
+          academic research, and startup agility to deliver impactful digital
+          solutions.
+        </p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Mission</h3>
+            <p>
+              Empower organizations to innovate responsibly by turning research,
+              data, and technology into measurable outcomes.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3>Vision</h3>
+            <p>
+              Build a future-ready ecosystem where industry, academia, and
+              startups collaborate to solve real problems at scale.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3>Positioning</h3>
+            <p>
+              We operate at the intersection of industry needs, academic rigor,
+              and rapid experimentation—delivering with speed and clarity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title">FAQ</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              What kind of organizations do you work with?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              We work with industry, smart cities, universities, startups, and
+              public sector teams.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              Do you provide training and workshops?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              Yes — tailored programs on AI, data, innovation methods, and
+              emerging tech.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button">
+              How do we start working together?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a">
+              Send a message below and we’ll schedule a short discovery call to
+              define scope and outcomes.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CALL TO ACTION / CONTACT ================= -->
+    <section id="contact" class="cta">
+      <div class="container">
+        <h2>Let’s build something meaningful</h2>
+        <p>
+          Partner with HOPn to explore innovation, research, and
+          technology-driven growth.
+        </p>
+
+        <div class="cta-grid">
+          <div class="cta-card">
+            <h3>Contact</h3>
+            <p class="muted">
+              Fill the form and we’ll open your email app with the message
+              ready.
+            </p>
+
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <label>
+                  Name
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </label>
+
+                <label>
+                  Email
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="you@company.com"
+                    required
+                  />
+                </label>
+              </div>
+
+              <label>
+                Message
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us what you want to build..."
+                  required
+                ></textarea>
+              </label>
+
+              <button type="submit" class="btn btn-primary">
+                Send message
+              </button>
+              <p class="form-note muted" id="formNote">
+                Or email us directly:
+                <a class="link" href="mailto:yousefalhammad2@gmail.com"
+                  >yousefalhammad2@gmail.com</a
+                >
+              </p>
+            </form>
+          </div>
+
+          <div class="cta-card">
+            <h3>Work with us</h3>
+            <p class="muted">
+              Typical engagements: discovery &amp; strategy, prototyping,
+              pilots, and implementation support.
+            </p>
+
+            <div class="cta-list">
+              <div class="cta-pill">Discovery workshop</div>
+              <div class="cta-pill">Prototype / PoC</div>
+              <div class="cta-pill">Pilot deployment</div>
+              <div class="cta-pill">Training program</div>
+              <div class="cta-pill">Innovation event</div>
+            </div>
+
+            <a href="#services" class="btn btn-secondary">See all services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">HOPn</div>
+          <p class="muted">
+            Innovation &amp; Technology hub connecting industry, academia, and
+            startups.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#approach">Approach</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#trust">Why Trust HOPn</a>
+          <a href="#cases">Case Studies</a>
+          <a href="#faq">FAQ</a>
+          <a href="#partners">Partners</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <p class="muted">Email:</p>
+          <a href="mailto:yousefalhammad2@gmail.com"
+            >yousefalhammad2@gmail.com</a
+          >
+          <p class="muted" style="margin-top: 10px">
+            © 2026 HOPn. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
