@@ -19,12 +19,67 @@
     <div class="dashboard hidden" id="dashboard">
       <aside class="sidebar">
         <h3>HOPn Admin</h3>
+        <button onclick="showSection('content')">✏️ Edit Content</button>
         <button onclick="showSection('stats')">📊 Stats</button>
         <button onclick="showSection('messages')">✉ Messages</button>
         <button onclick="logout()">🚪 Logout</button>
       </aside>
 
       <main class="content">
+        <!-- Content Editor -->
+        <section id="content" class="section hidden">
+          <h2>Edit Website Content</h2>
+
+          <label>Hero Title</label>
+          <textarea id="heroTitleInput" rows="3"></textarea>
+
+          <label>Hero Description</label>
+          <textarea id="heroDescInput" rows="4"></textarea>
+
+          <hr />
+
+          <h3>What We Deliver</h3>
+
+          <label>Panel Title</label>
+          <textarea id="panelTitleInput" rows="2"></textarea>
+
+          <label>Panel Subtitle</label>
+          <textarea id="panelSubtitleInput" rows="3"></textarea>
+
+          <hr />
+          <h3>Metrics (Hero Numbers)</h3>
+
+          <h4>Partners</h4>
+          <label>Number</label>
+          <input id="metricPartnersNumInput" />
+
+          <label>Label</label>
+          <input id="metricPartnersLabelInput" />
+
+          <h4>Projects</h4>
+          <label>Number</label>
+          <input id="metricProjectsNumInput" />
+
+          <label>Label</label>
+          <input id="metricProjectsLabelInput" />
+
+          <h4>R&D Hours</h4>
+          <label>Number</label>
+          <input id="metricHoursNumInput" />
+
+          <label>Label</label>
+          <input id="metricHoursLabelInput" />
+
+          <h4>Focus Areas</h4>
+          <label>Number</label>
+          <input id="metricFocusNumInput" />
+
+          <label>Label</label>
+          <input id="metricFocusLabelInput" />
+
+          <button onclick="saveContent()">💾 Save Changes</button>
+        </section>
+
         <!-- Stats -->
         <section id="stats" class="section">
           <h2>Website Stats</h2>

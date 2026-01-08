@@ -124,3 +124,50 @@ if (form) {
     formNote.textContent = "Opening your email client…";
   });
 }
+
+function loadContent() {
+  const heroTitle = localStorage.getItem("heroTitle");
+  const heroDesc = localStorage.getItem("heroDesc");
+
+  if (heroTitle) {
+    document.getElementById("heroTitle").innerHTML = heroTitle;
+  }
+
+  if (heroDesc) {
+    document.getElementById("heroDesc").textContent = heroDesc;
+  }
+
+  // Panel
+  if (localStorage.getItem("panelTitle"))
+    document.getElementById("panelTitle").textContent =
+      localStorage.getItem("panelTitle");
+
+  if (localStorage.getItem("panelSubtitle"))
+    document.getElementById("panelSubtitle").textContent =
+      localStorage.getItem("panelSubtitle");
+
+  // Metrics
+
+  function setMetric(key, id, suffix = "") {
+    const value = localStorage.getItem(key);
+    const el = document.getElementById(id);
+    if (value && el) {
+      el.textContent = value + suffix;
+    }
+  }
+
+  // Metrics
+  setMetric("metricPartnersNum", "metricPartnersNum", "+");
+  setMetric("metricPartnersLabel", "metricPartnersLabel");
+
+  setMetric("metricProjectsNum", "metricProjectsNum", "+");
+  setMetric("metricProjectsLabel", "metricProjectsLabel");
+
+  setMetric("metricHoursNum", "metricHoursNum", "+");
+  setMetric("metricHoursLabel", "metricHoursLabel");
+
+  setMetric("metricFocusNum", "metricFocusNum", "+");
+  setMetric("metricFocusLabel", "metricFocusLabel");
+}
+
+document.addEventListener("DOMContentLoaded", loadContent);
