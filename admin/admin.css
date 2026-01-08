@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0b1420;
+  color: #fff;
+}
+
+/* Login */
+.login-box {
+  max-width: 360px;
+  margin: 120px auto;
+  padding: 30px;
+  background: #111b2e;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  margin: 10px 0;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #23d5c3;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 14px;
+}
+
+/* Dashboard */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.sidebar {
+  width: 220px;
+  background: #070b10;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  background: #1b2a44;
+  color: #fff;
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+.section {
+  animation: fade 0.3s ease;
+}
+
+/* Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: #111b2e;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.stat-card span {
+  font-size: 28px;
+  font-weight: bold;
+  color: #23d5c3;
+}
+
+/* Messages */
+.messages-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.message {
+  background: #111b2e;
+  padding: 16px;
+  border-radius: 14px;
+}
+
+.message small {
+  color: #aaa;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

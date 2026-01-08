@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HOPn Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <!-- Login -->
+    <div class="login-box" id="loginBox">
+      <h2>Admin Login</h2>
+      <input type="password" id="password" placeholder="Enter admin password" />
+      <button onclick="login()">Login</button>
+      <p class="error" id="loginError"></p>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard hidden" id="dashboard">
+      <aside class="sidebar">
+        <h3>HOPn Admin</h3>
+        <button onclick="showSection('stats')">📊 Stats</button>
+        <button onclick="showSection('messages')">✉ Messages</button>
+        <button onclick="logout()">🚪 Logout</button>
+      </aside>
+
+      <main class="content">
+        <!-- Stats -->
+        <section id="stats" class="section">
+          <h2>Website Stats</h2>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <h3>Total Messages</h3>
+              <span id="msgCount">0</span>
+            </div>
+            <div class="stat-card">
+              <h3>Last Login</h3>
+              <span id="lastLogin">-</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Messages -->
+        <section id="messages" class="section hidden">
+          <h2>Contact Messages</h2>
+          <div id="messagesList" class="messages-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
