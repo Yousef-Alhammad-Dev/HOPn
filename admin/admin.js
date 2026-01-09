@@ -268,6 +268,32 @@ function saveContent() {
     );
   }
 
+  // ===== SERVICES =====
+
+  // Section title & subtitle
+  localStorage.setItem(
+    "servicesTitle",
+    document.getElementById("servicesTitleInput").value
+  );
+
+  localStorage.setItem(
+    "servicesSubtitle",
+    document.getElementById("servicesSubtitleInput").value
+  );
+
+  // Service cards
+  for (let i = 1; i <= 5; i++) {
+    localStorage.setItem(
+      `service${i}Title`,
+      document.getElementById(`service${i}TitleInput`).value
+    );
+
+    localStorage.setItem(
+      `service${i}Text`,
+      document.getElementById(`service${i}TextInput`).value
+    );
+  }
+
   alert("✅ Content saved successfully");
 }
 
@@ -415,6 +441,24 @@ document.getElementById("trustCard3TitleInput").value =
 for (let i = 1; i <= 4; i++) {
   document.getElementById(`trustCard3Item${i}Input`).value =
     localStorage.getItem(`trustCard3Item${i}`) || "";
+
+  // ===== SERVICES =====
+
+  // Section title & subtitle
+  document.getElementById("servicesTitleInput").value =
+    localStorage.getItem("servicesTitle") || "";
+
+  document.getElementById("servicesSubtitleInput").value =
+    localStorage.getItem("servicesSubtitle") || "";
+
+  // Service cards
+  for (let i = 1; i <= 5; i++) {
+    document.getElementById(`service${i}TitleInput`).value =
+      localStorage.getItem(`service${i}Title`) || "";
+
+    document.getElementById(`service${i}TextInput`).value =
+      localStorage.getItem(`service${i}Text`) || "";
+  }
 }
 
 // Auto login

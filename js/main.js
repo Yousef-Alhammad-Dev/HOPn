@@ -316,6 +316,37 @@ function loadContent() {
     const el = document.getElementById(`trustCard3Item${i}`);
     if (value && el) el.textContent = value;
   }
+
+  // ===== SERVICES =====
+
+  // Section title & subtitle
+  const servicesTitle = localStorage.getItem("servicesTitle");
+  const servicesSubtitle = localStorage.getItem("servicesSubtitle");
+
+  if (servicesTitle && document.getElementById("servicesTitle")) {
+    document.getElementById("servicesTitle").textContent = servicesTitle;
+  }
+
+  if (servicesSubtitle && document.getElementById("servicesSubtitle")) {
+    document.getElementById("servicesSubtitle").textContent = servicesSubtitle;
+  }
+
+  // Service cards
+  for (let i = 1; i <= 5; i++) {
+    const title = localStorage.getItem(`service${i}Title`);
+    const text = localStorage.getItem(`service${i}Text`);
+
+    const titleEl = document.getElementById(`service${i}Title`);
+    const textEl = document.getElementById(`service${i}Text`);
+
+    if (title && titleEl) {
+      titleEl.textContent = title;
+    }
+
+    if (text && textEl) {
+      textEl.textContent = text;
+    }
+  }
 }
 
 document.addEventListener("DOMContentLoaded", loadContent);
