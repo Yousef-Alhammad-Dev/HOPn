@@ -347,6 +347,57 @@ function loadContent() {
       textEl.textContent = text;
     }
   }
+
+  // ===== CASE STUDIES =====
+if (localStorage.getItem("casesTitle")) {
+  document.getElementById("casesTitle").textContent =
+    localStorage.getItem("casesTitle");
+}
+
+if (localStorage.getItem("casesSubtitle")) {
+  document.getElementById("casesSubtitle").textContent =
+    localStorage.getItem("casesSubtitle");
+}
+
+// Case 1
+if (localStorage.getItem("case1Tag"))
+  document.getElementById("case1Tag").textContent =
+    localStorage.getItem("case1Tag");
+
+if (localStorage.getItem("case1Title"))
+  document.getElementById("case1Title").textContent =
+    localStorage.getItem("case1Title");
+
+if (localStorage.getItem("case1Text"))
+  document.getElementById("case1Text").textContent =
+    localStorage.getItem("case1Text");
+
+// Case 2
+if (localStorage.getItem("case2Tag"))
+  document.getElementById("cases2Tag").textContent =
+    localStorage.getItem("case2Tag");
+
+if (localStorage.getItem("case2Title"))
+  document.getElementById("case2Title").textContent =
+    localStorage.getItem("case2Title");
+
+if (localStorage.getItem("case2Text"))
+  document.getElementById("case2Text").textContent =
+    localStorage.getItem("case2Text");
+
+// Case 3
+if (localStorage.getItem("case3Tag"))
+  document.getElementById("case3Tag").textContent =
+    localStorage.getItem("case3Tag");
+
+if (localStorage.getItem("case3Title"))
+  document.getElementById("case3Title").textContent =
+    localStorage.getItem("case3Title");
+
+if (localStorage.getItem("case3Text"))
+  document.getElementById("case3Text").textContent =
+    localStorage.getItem("case3Text");
+
 }
 
 document.addEventListener("DOMContentLoaded", loadContent);

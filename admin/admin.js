@@ -294,6 +294,58 @@ function saveContent() {
     );
   }
 
+  // ===== CASE STUDIES =====
+  localStorage.setItem(
+    "casesTitle",
+    document.getElementById("casesTitleInput").value
+  );
+  localStorage.setItem(
+    "casesSubtitle",
+    document.getElementById("casesSubtitleInput").value
+  );
+
+  // Case 1
+  localStorage.setItem(
+    "case1Tag",
+    document.getElementById("case1TagInput").value
+  );
+  localStorage.setItem(
+    "case1Title",
+    document.getElementById("case1TitleInput").value
+  );
+  localStorage.setItem(
+    "case1Text",
+    document.getElementById("case1TextInput").value
+  );
+
+  // Case 2
+  localStorage.setItem(
+    "case2Tag",
+    document.getElementById("case2TagInput").value
+  );
+  localStorage.setItem(
+    "case2Title",
+    document.getElementById("case2TitleInput").value
+  );
+  localStorage.setItem(
+    "case2Text",
+    document.getElementById("case2TextInput").value
+  );
+
+  // Case 3
+  localStorage.setItem(
+    "case3Tag",
+    document.getElementById("case3TagInput").value
+  );
+  localStorage.setItem(
+    "case3Title",
+    document.getElementById("case3TitleInput").value
+  );
+  localStorage.setItem(
+    "case3Text",
+    document.getElementById("case3TextInput").value
+  );
+
   alert("✅ Content saved successfully");
 }
 
@@ -459,6 +511,37 @@ for (let i = 1; i <= 4; i++) {
     document.getElementById(`service${i}TextInput`).value =
       localStorage.getItem(`service${i}Text`) || "";
   }
+
+  // ===== CASE STUDIES =====
+  document.getElementById("casesTitleInput").value =
+    localStorage.getItem("casesTitle") || "";
+
+  document.getElementById("casesSubtitleInput").value =
+    localStorage.getItem("casesSubtitle") || "";
+
+  // Case 1
+  document.getElementById("case1TagInput").value =
+    localStorage.getItem("case1Tag") || "";
+  document.getElementById("case1TitleInput").value =
+    localStorage.getItem("case1Title") || "";
+  document.getElementById("case1TextInput").value =
+    localStorage.getItem("case1Text") || "";
+
+  // Case 2
+  document.getElementById("case2TagInput").value =
+    localStorage.getItem("case2Tag") || "";
+  document.getElementById("case2TitleInput").value =
+    localStorage.getItem("case2Title") || "";
+  document.getElementById("case2TextInput").value =
+    localStorage.getItem("case2Text") || "";
+
+  // Case 3
+  document.getElementById("case3TagInput").value =
+    localStorage.getItem("case3Tag") || "";
+  document.getElementById("case3TitleInput").value =
+    localStorage.getItem("case3Title") || "";
+  document.getElementById("case3TextInput").value =
+    localStorage.getItem("case3Text") || "";
 }
 
 // Auto login
