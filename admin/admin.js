@@ -230,6 +230,44 @@ function saveContent() {
     document.getElementById("step4TextInput").value
   );
 
+  // ===== TRUST =====
+
+  // Card 1
+  localStorage.setItem(
+    "trustCard1Title",
+    document.getElementById("trustCard1TitleInput").value
+  );
+  for (let i = 1; i <= 5; i++) {
+    localStorage.setItem(
+      `trustCard1Item${i}`,
+      document.getElementById(`trustCard1Item${i}Input`).value
+    );
+  }
+
+  // Card 2
+  localStorage.setItem(
+    "trustCard2Title",
+    document.getElementById("trustCard2TitleInput").value
+  );
+  for (let i = 1; i <= 4; i++) {
+    localStorage.setItem(
+      `trustCard2Item${i}`,
+      document.getElementById(`trustCard2Item${i}Input`).value
+    );
+  }
+
+  // Card 3
+  localStorage.setItem(
+    "trustCard3Title",
+    document.getElementById("trustCard3TitleInput").value
+  );
+  for (let i = 1; i <= 4; i++) {
+    localStorage.setItem(
+      `trustCard3Item${i}`,
+      document.getElementById(`trustCard3Item${i}Input`).value
+    );
+  }
+
   alert("✅ Content saved successfully");
 }
 
@@ -352,6 +390,32 @@ document.getElementById("step4TitleInput").value =
   localStorage.getItem("step4Title") || "";
 document.getElementById("step4TextInput").value =
   localStorage.getItem("step4Text") || "";
+
+// ===== TRUST =====
+
+// Card 1
+document.getElementById("trustCard1TitleInput").value =
+  localStorage.getItem("trustCard1Title") || "";
+for (let i = 1; i <= 5; i++) {
+  document.getElementById(`trustCard1Item${i}Input`).value =
+    localStorage.getItem(`trustCard1Item${i}`) || "";
+}
+
+// Card 2
+document.getElementById("trustCard2TitleInput").value =
+  localStorage.getItem("trustCard2Title") || "";
+for (let i = 1; i <= 4; i++) {
+  document.getElementById(`trustCard2Item${i}Input`).value =
+    localStorage.getItem(`trustCard2Item${i}`) || "";
+}
+
+// Card 3
+document.getElementById("trustCard3TitleInput").value =
+  localStorage.getItem("trustCard3Title") || "";
+for (let i = 1; i <= 4; i++) {
+  document.getElementById(`trustCard3Item${i}Input`).value =
+    localStorage.getItem(`trustCard3Item${i}`) || "";
+}
 
 // Auto login
 if (localStorage.getItem("adminLogged") === "true") {

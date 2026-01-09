@@ -272,6 +272,50 @@ function loadContent() {
   // Step 4
   setApproach("step4Title", "step4Title");
   setApproach("step4Text", "step4Text");
+
+  // ================== TRUST ==================
+
+  // Section title
+  if (localStorage.getItem("trustTitle")) {
+    const el = document.getElementById("trustTitle");
+    if (el) el.textContent = localStorage.getItem("trustTitle");
+  }
+
+  // -------- Card 1 --------
+  if (localStorage.getItem("trustCard1Title")) {
+    const el = document.getElementById("trustCard1Title");
+    if (el) el.textContent = localStorage.getItem("trustCard1Title");
+  }
+
+  for (let i = 1; i <= 5; i++) {
+    const value = localStorage.getItem(`trustCard1Item${i}`);
+    const el = document.getElementById(`trustCard1Item${i}`);
+    if (value && el) el.textContent = value;
+  }
+
+  // -------- Card 2 --------
+  if (localStorage.getItem("trustCard2Title")) {
+    const el = document.getElementById("trustCard2Title");
+    if (el) el.textContent = localStorage.getItem("trustCard2Title");
+  }
+
+  for (let i = 1; i <= 4; i++) {
+    const value = localStorage.getItem(`trustCard2Item${i}`);
+    const el = document.getElementById(`trustCard2Item${i}`);
+    if (value && el) el.textContent = value;
+  }
+
+  // -------- Card 3 --------
+  if (localStorage.getItem("trustCard3Title")) {
+    const el = document.getElementById("trustCard3Title");
+    if (el) el.textContent = localStorage.getItem("trustCard3Title");
+  }
+
+  for (let i = 1; i <= 4; i++) {
+    const value = localStorage.getItem(`trustCard3Item${i}`);
+    const el = document.getElementById(`trustCard3Item${i}`);
+    if (value && el) el.textContent = value;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", loadContent);
