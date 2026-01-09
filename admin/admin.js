@@ -346,6 +346,32 @@ function saveContent() {
     document.getElementById("case3TextInput").value
   );
 
+  // ===== TESTIMONIALS =====
+
+  // Section title
+  localStorage.setItem(
+    "testimonialsTitle",
+    document.getElementById("testimonialsTitleInput").value
+  );
+
+  // Testimonials content
+  for (let i = 1; i <= 3; i++) {
+    localStorage.setItem(
+      `testimonial${i}Quote`,
+      document.getElementById(`testimonial${i}QuoteInput`).value
+    );
+
+    localStorage.setItem(
+      `testimonial${i}Name`,
+      document.getElementById(`testimonial${i}NameInput`).value
+    );
+
+    localStorage.setItem(
+      `testimonial${i}Meta`,
+      document.getElementById(`testimonial${i}MetaInput`).value
+    );
+  }
+
   alert("✅ Content saved successfully");
 }
 
@@ -542,6 +568,24 @@ for (let i = 1; i <= 4; i++) {
     localStorage.getItem("case3Title") || "";
   document.getElementById("case3TextInput").value =
     localStorage.getItem("case3Text") || "";
+
+  // ===== TESTIMONIALS =====
+
+  // Section title
+  document.getElementById("testimonialsTitleInput").value =
+    localStorage.getItem("testimonialsTitle") || "";
+
+  // Testimonials content
+  for (let i = 1; i <= 3; i++) {
+    document.getElementById(`testimonial${i}QuoteInput`).value =
+      localStorage.getItem(`testimonial${i}Quote`) || "";
+
+    document.getElementById(`testimonial${i}NameInput`).value =
+      localStorage.getItem(`testimonial${i}Name`) || "";
+
+    document.getElementById(`testimonial${i}MetaInput`).value =
+      localStorage.getItem(`testimonial${i}Meta`) || "";
+  }
 }
 
 // Auto login

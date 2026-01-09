@@ -349,55 +349,83 @@ function loadContent() {
   }
 
   // ===== CASE STUDIES =====
-if (localStorage.getItem("casesTitle")) {
-  document.getElementById("casesTitle").textContent =
-    localStorage.getItem("casesTitle");
-}
+  if (localStorage.getItem("casesTitle")) {
+    document.getElementById("casesTitle").textContent =
+      localStorage.getItem("casesTitle");
+  }
 
-if (localStorage.getItem("casesSubtitle")) {
-  document.getElementById("casesSubtitle").textContent =
-    localStorage.getItem("casesSubtitle");
-}
+  if (localStorage.getItem("casesSubtitle")) {
+    document.getElementById("casesSubtitle").textContent =
+      localStorage.getItem("casesSubtitle");
+  }
 
-// Case 1
-if (localStorage.getItem("case1Tag"))
-  document.getElementById("case1Tag").textContent =
-    localStorage.getItem("case1Tag");
+  // Case 1
+  if (localStorage.getItem("case1Tag"))
+    document.getElementById("case1Tag").textContent =
+      localStorage.getItem("case1Tag");
 
-if (localStorage.getItem("case1Title"))
-  document.getElementById("case1Title").textContent =
-    localStorage.getItem("case1Title");
+  if (localStorage.getItem("case1Title"))
+    document.getElementById("case1Title").textContent =
+      localStorage.getItem("case1Title");
 
-if (localStorage.getItem("case1Text"))
-  document.getElementById("case1Text").textContent =
-    localStorage.getItem("case1Text");
+  if (localStorage.getItem("case1Text"))
+    document.getElementById("case1Text").textContent =
+      localStorage.getItem("case1Text");
 
-// Case 2
-if (localStorage.getItem("case2Tag"))
-  document.getElementById("cases2Tag").textContent =
-    localStorage.getItem("case2Tag");
+  // Case 2
+  if (localStorage.getItem("case2Tag"))
+    document.getElementById("cases2Tag").textContent =
+      localStorage.getItem("case2Tag");
 
-if (localStorage.getItem("case2Title"))
-  document.getElementById("case2Title").textContent =
-    localStorage.getItem("case2Title");
+  if (localStorage.getItem("case2Title"))
+    document.getElementById("case2Title").textContent =
+      localStorage.getItem("case2Title");
 
-if (localStorage.getItem("case2Text"))
-  document.getElementById("case2Text").textContent =
-    localStorage.getItem("case2Text");
+  if (localStorage.getItem("case2Text"))
+    document.getElementById("case2Text").textContent =
+      localStorage.getItem("case2Text");
 
-// Case 3
-if (localStorage.getItem("case3Tag"))
-  document.getElementById("case3Tag").textContent =
-    localStorage.getItem("case3Tag");
+  // Case 3
+  if (localStorage.getItem("case3Tag"))
+    document.getElementById("case3Tag").textContent =
+      localStorage.getItem("case3Tag");
 
-if (localStorage.getItem("case3Title"))
-  document.getElementById("case3Title").textContent =
-    localStorage.getItem("case3Title");
+  if (localStorage.getItem("case3Title"))
+    document.getElementById("case3Title").textContent =
+      localStorage.getItem("case3Title");
 
-if (localStorage.getItem("case3Text"))
-  document.getElementById("case3Text").textContent =
-    localStorage.getItem("case3Text");
+  if (localStorage.getItem("case3Text"))
+    document.getElementById("case3Text").textContent =
+      localStorage.getItem("case3Text");
 
+  // ===== TESTIMONIALS =====
+
+  // Section title
+  if (localStorage.getItem("testimonialsTitle")) {
+    document.getElementById("testimonialsTitle").textContent =
+      localStorage.getItem("testimonialsTitle");
+  }
+
+  // Testimonials content
+  for (let i = 1; i <= 3; i++) {
+    const quote = localStorage.getItem(`testimonial${i}Quote`);
+    const name = localStorage.getItem(`testimonial${i}Name`);
+    const meta = localStorage.getItem(`testimonial${i}Meta`);
+
+    if (quote) {
+      document.getElementById(
+        `testimonial${i}Quote`
+      ).textContent = `“${quote}”`;
+    }
+
+    if (name) {
+      document.getElementById(`testimonial${i}Name`).textContent = name;
+    }
+
+    if (meta) {
+      document.getElementById(`testimonial${i}Meta`).textContent = meta;
+    }
+  }
 }
 
 document.addEventListener("DOMContentLoaded", loadContent);
