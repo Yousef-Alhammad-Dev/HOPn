@@ -426,6 +426,50 @@ function loadContent() {
       document.getElementById(`testimonial${i}Meta`).textContent = meta;
     }
   }
+
+  // ===== ABOUT =====
+  if (localStorage.getItem("aboutTitle")) {
+    document.getElementById("aboutTitle").textContent =
+      localStorage.getItem("aboutTitle");
+  }
+
+  if (localStorage.getItem("aboutSubtitle")) {
+    document.getElementById("aboutSubtitle").textContent =
+      localStorage.getItem("aboutSubtitle");
+  }
+
+  for (let i = 1; i <= 3; i++) {
+    const title = localStorage.getItem(`aboutCard${i}Title`);
+    const text = localStorage.getItem(`aboutCard${i}Text`);
+
+    if (title) {
+      document.getElementById(`aboutCard${i}Title`).textContent = title;
+    }
+
+    if (text) {
+      document.getElementById(`aboutCard${i}Text`).textContent = text;
+    }
+  }
+
+  // ===== FAQ =====
+  if (localStorage.getItem("faqTitle")) {
+    document.getElementById("faqTitle").textContent =
+      localStorage.getItem("faqTitle");
+  }
+
+  for (let i = 1; i <= 3; i++) {
+    const q = localStorage.getItem(`faq${i}Question`);
+    const a = localStorage.getItem(`faq${i}Answer`);
+
+    if (q) {
+      document.getElementById(`faq${i}Question`).childNodes[0].nodeValue =
+        q + " ";
+    }
+
+    if (a) {
+      document.getElementById(`faq${i}Answer`).textContent = a;
+    }
+  }
 }
 
 document.addEventListener("DOMContentLoaded", loadContent);

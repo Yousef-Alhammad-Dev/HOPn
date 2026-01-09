@@ -371,6 +371,43 @@ function saveContent() {
       document.getElementById(`testimonial${i}MetaInput`).value
     );
   }
+  // ===== ABOUT =====
+  localStorage.setItem(
+    "aboutTitle",
+    document.getElementById("aboutTitleInput").value
+  );
+  localStorage.setItem(
+    "aboutSubtitle",
+    document.getElementById("aboutSubtitleInput").value
+  );
+
+  for (let i = 1; i <= 3; i++) {
+    localStorage.setItem(
+      `aboutCard${i}Title`,
+      document.getElementById(`aboutCard${i}TitleInput`).value
+    );
+    localStorage.setItem(
+      `aboutCard${i}Text`,
+      document.getElementById(`aboutCard${i}TextInput`).value
+    );
+  }
+
+  // ===== FAQ =====
+  localStorage.setItem(
+    "faqTitle",
+    document.getElementById("faqTitleInput").value
+  );
+
+  for (let i = 1; i <= 3; i++) {
+    localStorage.setItem(
+      `faq${i}Question`,
+      document.getElementById(`faq${i}QuestionInput`).value
+    );
+    localStorage.setItem(
+      `faq${i}Answer`,
+      document.getElementById(`faq${i}AnswerInput`).value
+    );
+  }
 
   alert("✅ Content saved successfully");
 }
@@ -585,6 +622,33 @@ for (let i = 1; i <= 4; i++) {
 
     document.getElementById(`testimonial${i}MetaInput`).value =
       localStorage.getItem(`testimonial${i}Meta`) || "";
+  }
+
+  // ===== ABOUT =====
+  document.getElementById("aboutTitleInput").value =
+    localStorage.getItem("aboutTitle") || "";
+
+  document.getElementById("aboutSubtitleInput").value =
+    localStorage.getItem("aboutSubtitle") || "";
+
+  for (let i = 1; i <= 3; i++) {
+    document.getElementById(`aboutCard${i}TitleInput`).value =
+      localStorage.getItem(`aboutCard${i}Title`) || "";
+
+    document.getElementById(`aboutCard${i}TextInput`).value =
+      localStorage.getItem(`aboutCard${i}Text`) || "";
+  }
+
+  // ===== FAQ =====
+  document.getElementById("faqTitleInput").value =
+    localStorage.getItem("faqTitle") || "";
+
+  for (let i = 1; i <= 3; i++) {
+    document.getElementById(`faq${i}QuestionInput`).value =
+      localStorage.getItem(`faq${i}Question`) || "";
+
+    document.getElementById(`faq${i}AnswerInput`).value =
+      localStorage.getItem(`faq${i}Answer`) || "";
   }
 }
 
