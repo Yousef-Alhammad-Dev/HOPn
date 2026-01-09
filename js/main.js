@@ -168,6 +168,32 @@ function loadContent() {
 
   setMetric("metricFocusNum", "metricFocusNum", "+");
   setMetric("metricFocusLabel", "metricFocusLabel");
+
+  // ================= MINI CARDS =================
+  function setMiniCard(titleKey, textKey, titleId, textId) {
+    const title = localStorage.getItem(titleKey);
+    const text = localStorage.getItem(textKey);
+
+    if (title && document.getElementById(titleId)) {
+      document.getElementById(titleId).textContent = title;
+    }
+
+    if (text && document.getElementById(textId)) {
+      document.getElementById(textId).textContent = text;
+    }
+  }
+
+  // Card 1
+  setMiniCard("mini1Title", "mini1Text", "mini1Title", "mini1Text");
+
+  // Card 2
+  setMiniCard("mini2Title", "mini2Text", "mini2Title", "mini2Text");
+
+  // Card 3
+  setMiniCard("mini3Title", "mini3Text", "mini3Title", "mini3Text");
+
+  // Card 4
+  setMiniCard("mini4Title", "mini4Text", "mini4Title", "mini4Text");
 }
 
 document.addEventListener("DOMContentLoaded", loadContent);

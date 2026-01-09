@@ -83,6 +83,48 @@ function saveContent() {
     document.getElementById("metricFocusLabelInput").value
   );
 
+  // ===== MINI CARDS =====
+
+  // Card 1
+  localStorage.setItem(
+    "mini1Title",
+    document.getElementById("mini1TitleInput").value
+  );
+  localStorage.setItem(
+    "mini1Text",
+    document.getElementById("mini1TextInput").value
+  );
+
+  // Card 2
+  localStorage.setItem(
+    "mini2Title",
+    document.getElementById("mini2TitleInput").value
+  );
+  localStorage.setItem(
+    "mini2Text",
+    document.getElementById("mini2TextInput").value
+  );
+
+  // Card 3
+  localStorage.setItem(
+    "mini3Title",
+    document.getElementById("mini3TitleInput").value
+  );
+  localStorage.setItem(
+    "mini3Text",
+    document.getElementById("mini3TextInput").value
+  );
+
+  // Card 4
+  localStorage.setItem(
+    "mini4Title",
+    document.getElementById("mini4TitleInput").value
+  );
+  localStorage.setItem(
+    "mini4Text",
+    document.getElementById("mini4TextInput").value
+  );
+
   alert("✅ Content saved successfully");
 }
 
@@ -118,6 +160,27 @@ function loadContentEditor() {
 
   document.getElementById("metricFocusLabelInput").value =
     localStorage.getItem("metricFocusLabel") || "";
+
+  // ===== MINI CARDS =====
+  document.getElementById("mini1TitleInput").value =
+    localStorage.getItem("mini1Title") || "";
+  document.getElementById("mini1TextInput").value =
+    localStorage.getItem("mini1Text") || "";
+
+  document.getElementById("mini2TitleInput").value =
+    localStorage.getItem("mini2Title") || "";
+  document.getElementById("mini2TextInput").value =
+    localStorage.getItem("mini2Text") || "";
+
+  document.getElementById("mini3TitleInput").value =
+    localStorage.getItem("mini3Title") || "";
+  document.getElementById("mini3TextInput").value =
+    localStorage.getItem("mini3Text") || "";
+
+  document.getElementById("mini4TitleInput").value =
+    localStorage.getItem("mini4Title") || "";
+  document.getElementById("mini4TextInput").value =
+    localStorage.getItem("mini4Text") || "";
 }
 
 // Auto login
