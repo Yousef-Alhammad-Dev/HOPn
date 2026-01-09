@@ -210,6 +210,68 @@ function loadContent() {
       if (clone) clone.textContent = value;
     }
   }
+
+  // ================= WHAT WE DO =================
+
+  // Section title & subtitle
+  if (localStorage.getItem("whatTitle")) {
+    document.getElementById("whatTitle").textContent =
+      localStorage.getItem("whatTitle");
+  }
+
+  if (localStorage.getItem("whatSubtitle")) {
+    document.getElementById("whatSubtitle").textContent =
+      localStorage.getItem("whatSubtitle");
+  }
+
+  // Helper for feature cards
+  function setFeature(titleKey, textKey, titleId, textId) {
+    const title = localStorage.getItem(titleKey);
+    const text = localStorage.getItem(textKey);
+
+    if (title && document.getElementById(titleId)) {
+      document.getElementById(titleId).textContent = title;
+    }
+
+    if (text && document.getElementById(textId)) {
+      document.getElementById(textId).textContent = text;
+    }
+  }
+
+  // Feature cards
+  setFeature("feature1Title", "feature1Text", "feature1Title", "feature1Text");
+  setFeature("feature2Title", "feature2Text", "feature2Title", "feature2Text");
+  setFeature("feature3Title", "feature3Text", "feature3Title", "feature3Text");
+  setFeature("feature4Title", "feature4Text", "feature4Title", "feature4Text");
+
+  // ================= APPROACH =================
+  function setApproach(key, elementId) {
+    const value = localStorage.getItem(key);
+    const el = document.getElementById(elementId);
+    if (value && el) {
+      el.textContent = value;
+    }
+  }
+
+  // Section title & subtitle
+  setApproach("approachTitle", "approachTitle");
+  setApproach("approachSubtitle", "approachSubtitle");
+
+  // Step 1
+  setApproach("step1Title", "step1Title");
+  setApproach("step1Text", "step1Text");
+
+  // Step 2
+  setApproach("step2Title", "step2Title");
+  setApproach("step2Text", "step2Text");
+
+  // Step 3
+  setApproach("step3Title", "step3Title");
+  setApproach("step3Text", "step3Text");
+
+  // Step 4
+  setApproach("step4Title", "step4Title");
+  setApproach("step4Text", "step4Text");
 }
 
 document.addEventListener("DOMContentLoaded", loadContent);

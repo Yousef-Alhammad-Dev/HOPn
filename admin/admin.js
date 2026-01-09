@@ -138,6 +138,98 @@ function saveContent() {
     );
   }
 
+  // ===== WHAT WE DO =====
+  localStorage.setItem(
+    "whatTitle",
+    document.getElementById("whatTitleInput").value
+  );
+
+  localStorage.setItem(
+    "whatSubtitle",
+    document.getElementById("whatSubtitleInput").value
+  );
+
+  // Feature 1
+  localStorage.setItem(
+    "feature1Title",
+    document.getElementById("feature1TitleInput").value
+  );
+  localStorage.setItem(
+    "feature1Text",
+    document.getElementById("feature1TextInput").value
+  );
+
+  // Feature 2
+  localStorage.setItem(
+    "feature2Title",
+    document.getElementById("feature2TitleInput").value
+  );
+  localStorage.setItem(
+    "feature2Text",
+    document.getElementById("feature2TextInput").value
+  );
+
+  // Feature 3
+  localStorage.setItem(
+    "feature3Title",
+    document.getElementById("feature3TitleInput").value
+  );
+  localStorage.setItem(
+    "feature3Text",
+    document.getElementById("feature3TextInput").value
+  );
+
+  // ================= APPROACH =================
+  localStorage.setItem(
+    "approachTitle",
+    document.getElementById("approachTitleInput").value
+  );
+
+  localStorage.setItem(
+    "approachSubtitle",
+    document.getElementById("approachSubtitleInput").value
+  );
+
+  // Step 1
+  localStorage.setItem(
+    "step1Title",
+    document.getElementById("step1TitleInput").value
+  );
+  localStorage.setItem(
+    "step1Text",
+    document.getElementById("step1TextInput").value
+  );
+
+  // Step 2
+  localStorage.setItem(
+    "step2Title",
+    document.getElementById("step2TitleInput").value
+  );
+  localStorage.setItem(
+    "step2Text",
+    document.getElementById("step2TextInput").value
+  );
+
+  // Step 3
+  localStorage.setItem(
+    "step3Title",
+    document.getElementById("step3TitleInput").value
+  );
+  localStorage.setItem(
+    "step3Text",
+    document.getElementById("step3TextInput").value
+  );
+
+  // Step 4
+  localStorage.setItem(
+    "step4Title",
+    document.getElementById("step4TitleInput").value
+  );
+  localStorage.setItem(
+    "step4Text",
+    document.getElementById("step4TextInput").value
+  );
+
   alert("✅ Content saved successfully");
 }
 
@@ -204,6 +296,62 @@ for (let i = 1; i <= 8; i++) {
   document.getElementById(`partner${i}Input`).value =
     localStorage.getItem(`partner${i}`) || "";
 }
+
+// ===== WHAT WE DO =====
+document.getElementById("whatTitleInput").value =
+  localStorage.getItem("whatTitle") || "";
+
+document.getElementById("whatSubtitleInput").value =
+  localStorage.getItem("whatSubtitle") || "";
+
+// Feature 1
+document.getElementById("feature1TitleInput").value =
+  localStorage.getItem("feature1Title") || "";
+document.getElementById("feature1TextInput").value =
+  localStorage.getItem("feature1Text") || "";
+
+// Feature 2
+document.getElementById("feature2TitleInput").value =
+  localStorage.getItem("feature2Title") || "";
+document.getElementById("feature2TextInput").value =
+  localStorage.getItem("feature2Text") || "";
+
+// Feature 3
+document.getElementById("feature3TitleInput").value =
+  localStorage.getItem("feature3Title") || "";
+document.getElementById("feature3TextInput").value =
+  localStorage.getItem("feature3Text") || "";
+
+// ================= APPROACH =================
+document.getElementById("approachTitleInput").value =
+  localStorage.getItem("approachTitle") || "";
+
+document.getElementById("approachSubtitleInput").value =
+  localStorage.getItem("approachSubtitle") || "";
+
+// Step 1
+document.getElementById("step1TitleInput").value =
+  localStorage.getItem("step1Title") || "";
+document.getElementById("step1TextInput").value =
+  localStorage.getItem("step1Text") || "";
+
+// Step 2
+document.getElementById("step2TitleInput").value =
+  localStorage.getItem("step2Title") || "";
+document.getElementById("step2TextInput").value =
+  localStorage.getItem("step2Text") || "";
+
+// Step 3
+document.getElementById("step3TitleInput").value =
+  localStorage.getItem("step3Title") || "";
+document.getElementById("step3TextInput").value =
+  localStorage.getItem("step3Text") || "";
+
+// Step 4
+document.getElementById("step4TitleInput").value =
+  localStorage.getItem("step4Title") || "";
+document.getElementById("step4TextInput").value =
+  localStorage.getItem("step4Text") || "";
 
 // Auto login
 if (localStorage.getItem("adminLogged") === "true") {
