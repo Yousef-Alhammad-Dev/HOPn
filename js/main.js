@@ -470,6 +470,15 @@ function loadContent() {
       document.getElementById(`faq${i}Answer`).textContent = a;
     }
   }
+
+  // ===== FOOTER EMAIL =====
+  const footerEmail = localStorage.getItem("footerEmail");
+
+  if (footerEmail) {
+    const emailEl = document.getElementById("footerEmail");
+    emailEl.textContent = footerEmail;
+    emailEl.href = `mailto:${footerEmail}`;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", loadContent);

@@ -409,6 +409,11 @@ function saveContent() {
     );
   }
 
+  localStorage.setItem(
+    "footerEmail",
+    document.getElementById("footerEmailInput").value
+  );
+
   alert("✅ Content saved successfully");
 }
 
@@ -650,6 +655,9 @@ for (let i = 1; i <= 4; i++) {
     document.getElementById(`faq${i}AnswerInput`).value =
       localStorage.getItem(`faq${i}Answer`) || "";
   }
+
+  document.getElementById("footerEmailInput").value =
+    localStorage.getItem("footerEmail") || "";
 }
 
 // Auto login
