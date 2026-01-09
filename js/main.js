@@ -194,6 +194,22 @@ function loadContent() {
 
   // Card 4
   setMiniCard("mini4Title", "mini4Text", "mini4Title", "mini4Text");
+
+  // ===== PARTNERS =====
+  if (localStorage.getItem("partnersKicker")) {
+    document.getElementById("partnersKicker").textContent =
+      localStorage.getItem("partnersKicker");
+  }
+
+  for (let i = 1; i <= 8; i++) {
+    const value = localStorage.getItem(`partner${i}`);
+    if (value) {
+      const el = document.getElementById(`partner${i}`);
+      const clone = document.getElementById(`partner${i}_clone`);
+      if (el) el.textContent = value;
+      if (clone) clone.textContent = value;
+    }
+  }
 }
 
 document.addEventListener("DOMContentLoaded", loadContent);

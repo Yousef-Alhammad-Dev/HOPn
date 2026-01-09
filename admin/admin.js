@@ -125,6 +125,19 @@ function saveContent() {
     document.getElementById("mini4TextInput").value
   );
 
+  // ===== PARTNERS =====
+  localStorage.setItem(
+    "partnersKicker",
+    document.getElementById("partnersKickerInput").value
+  );
+
+  for (let i = 1; i <= 8; i++) {
+    localStorage.setItem(
+      `partner${i}`,
+      document.getElementById(`partner${i}Input`).value
+    );
+  }
+
   alert("✅ Content saved successfully");
 }
 
@@ -181,6 +194,15 @@ function loadContentEditor() {
     localStorage.getItem("mini4Title") || "";
   document.getElementById("mini4TextInput").value =
     localStorage.getItem("mini4Text") || "";
+}
+
+// ===== PARTNERS =====
+document.getElementById("partnersKickerInput").value =
+  localStorage.getItem("partnersKicker") || "";
+
+for (let i = 1; i <= 8; i++) {
+  document.getElementById(`partner${i}Input`).value =
+    localStorage.getItem(`partner${i}`) || "";
 }
 
 // Auto login
